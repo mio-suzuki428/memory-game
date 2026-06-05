@@ -5,28 +5,17 @@
 ========================= */
 
 body {
+  margin: 0;
+  padding: 30px;
 
-    margin: 0;
-    padding: 30px;
+  font-family: "Trebuchet MS", "Arial", sans-serif;
 
-    font-family:
-        "Trebuchet MS",
-        "Arial",
-        sans-serif;
+  background: linear-gradient(135deg, #fff7b8, #ffd6e7, #cfe8ff);
 
-    background:
-        linear-gradient(
-            135deg,
-            #fff7b8,
-            #ffd6e7,
-            #cfe8ff
-        );
+  min-height: 100vh;
+  margin-top: 20px;
 
-    min-height: 100vh;
-	margin-top: 20px;
-
-
-    color: #555;
+  color: #555;
 }
 
 /* =========================
@@ -34,32 +23,29 @@ body {
 ========================= */
 
 h1 {
+  text-align: center;
 
-    text-align: center;
+  font-size: 52px;
 
-    font-size: 52px;
+  color: #ff69b4;
 
-    color: #ff69b4;
+  text-shadow:
+    3px 3px 0 #fff,
+    6px 6px 0 rgba(0, 0, 0, 0.08);
 
-    text-shadow:
-        3px 3px 0 #fff,
-        6px 6px 0 rgba(0,0,0,0.08);
-
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 h2 {
+  text-align: center;
 
-    text-align: center;
-
-    color: #666;
+  color: #666;
 }
 
 h3 {
+  color: #ff69b4;
 
-    color: #ff69b4;
-
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* =========================
@@ -67,42 +53,37 @@ h3 {
 ========================= */
 
 .start-box {
+  width: 420px;
 
-    width: 420px;
+  margin: 80px auto;
 
-    margin: 80px auto;
+  padding: 40px;
 
-    padding: 40px;
+  background: rgba(255, 255, 255, 0.9);
 
-    background:
-        rgba(255,255,255,0.9);
+  border-radius: 30px;
 
-    border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 
-    box-shadow:
-        0 8px 20px rgba(0,0,0,0.12);
-
-    text-align: center;
+  text-align: center;
 }
 
 .start-box input[type="text"] {
+  width: 80%;
 
-    width: 80%;
+  padding: 14px;
 
-    padding: 14px;
+  font-size: 18px;
 
-    font-size: 18px;
+  border: 3px solid #ffd6e7;
 
-    border:
-        3px solid #ffd6e7;
+  border-radius: 15px;
 
-    border-radius: 15px;
+  outline: none;
 
-    outline: none;
+  margin-top: 10px;
 
-    margin-top: 10px;
-
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 /* =========================
@@ -110,39 +91,103 @@ h3 {
 ========================= */
 
 .start-button {
+  background: linear-gradient(135deg, #ffb6d9, #ffd966);
 
-    background:
-        linear-gradient(
-            135deg,
-            #ffb6d9,
-            #ffd966
-        );
+  border: none;
 
-    border: none;
+  border-radius: 18px;
 
-    border-radius: 18px;
+  color: white;
 
-    color: white;
+  font-size: 18px;
 
-    font-size: 18px;
+  font-weight: bold;
 
-    font-weight: bold;
+  cursor: pointer;
 
-    cursor: pointer;
+  transition: 0.2s;
 
-    transition: 0.2s;
-
-    box-shadow:
-        0 5px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 button:hover {
+  transform: translateY(-3px) scale(1.03);
+  opacity: 0.95;
+}
 
-    transform:
-        translateY(-3px)
-        scale(1.03);
+/* =========================
+   ★上部バー（追加・重要）
+========================= */
 
-    opacity: 0.95;
+.top-bar {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px 20px;
+
+  margin-bottom: 20px;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  border-radius: 18px;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+
+  flex-wrap: wrap;
+}
+
+.status {
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+
+  font-size: 18px;
+  color: #555;
+}
+
+.player,
+.turn {
+  font-weight: bold;
+}
+
+/* =========================
+   再挑戦ボタン（上部バー用に変更）
+========================= */
+
+.retry-button {
+  padding: 10px 22px;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  border: none;
+
+  border-radius: 999px;
+
+  color: #5a4a66;
+
+  background: #e9ddff;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.retry-button:hover {
+  transform: translateY(-2px) scale(1.05);
+
+  background: #dfd0ff;
+
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
 }
 
 /* =========================
@@ -150,35 +195,35 @@ button:hover {
 ========================= */
 
 .wrapper {
+  display: flex;
 
-    display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
-    justify-content: center;
+  gap: 40px;
 
-    align-items: flex-start;
+  margin-top: 20px;
 
-    gap: 40px;
-
-    margin-top: 20px;
-
+  flex-wrap: wrap;
 }
+
+/* =========================
+   ゲーム・ランキング共通
+========================= */
 
 .game,
 .rank {
+  background: rgba(255, 255, 255, 0.9);
 
-    background:
-        rgba(255,255,255,0.9);
+  padding: 25px;
 
-    padding: 25px;
+  border-radius: 25px;
 
-    border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 
-    box-shadow:
-        0 8px 20px rgba(0,0,0,0.1);
-		   padding-bottom: 40px;
+  padding-bottom: 40px;
 
-		   border-bottom: 2px dashed #e8d8ff;
-
+  border-bottom: 2px dashed #e8d8ff;
 }
 
 /* =========================
@@ -186,22 +231,19 @@ button:hover {
 ========================= */
 
 .game table {
+  border-collapse: separate;
 
-    border-collapse: separate;
+  border-spacing: 6px;
 
-    border-spacing: 6px;
-
-    margin: auto;
+  margin: auto;
 }
+
 .game td {
+  width: 72px;
+  height: 72px;
 
-    width: 72px;
-
-    height: 72px;
-
-    text-align: center;
-
-    vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* =========================
@@ -209,239 +251,180 @@ button:hover {
 ========================= */
 
 .card-button {
+  width: 72px;
+  height: 72px;
 
-    width: 72px;
+  font-size: 24px;
 
-    height: 72px;
+  border-radius: 18px;
 
-    font-size: 24px;
+  background: linear-gradient(135deg, #9fd3ff, #cfe8ff);
 
-    border-radius: 18px;
+  color: white;
 
-    background:
-        linear-gradient(
-            135deg,
-            #9fd3ff,
-            #cfe8ff
-        );
+  border: none;
+  font-weight: bold;
 
-    color: white;
-	border: none;
-	font-weight: bold;
-	cursor: pointer;
-	transition: 0.2s;
-	box-shadow:
-	    0 4px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
 
+  transition: 0.2s;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-button:hover {
+  transform: translateY(-2px) scale(1.03);
 }
 
 .open-card {
+  width: 72px;
+  height: 72px;
 
-    width: 72px;
-    height: 72px;
-	background: white;
-    border-radius: 18px;
-	border: 2px solid #eee;
+  background: white;
 
-	display: flex;
+  border-radius: 18px;
 
-	justify-content: center;
+  border: 2px solid #eee;
 
-	align-items: center;
+  display: flex;
 
-	font-size: 24px;
+  justify-content: center;
+  align-items: center;
 
-	font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 
-	box-shadow:
-	    0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.card-button:hover {
 
-    transform:
-        translateY(-2px)
-        scale(1.03);
-}
 /* =========================
    カード色
 ========================= */
 
 .red {
-
-    color: #ff4d6d;
+  color: #ff4d6d;
 }
-
 .green {
-
-    color: #32b36b;
+  color: #32b36b;
 }
-
 .black {
-
-    color: #444;
+  color: #444;
 }
 
 /* =========================
-   ランキング
+   ランキング（PC右・スマホ下）
 ========================= */
 
 .rank {
-
-    width: 280px;
+  width: 280px;
+  flex: 0 0 280px;
 }
 
 .rank h3 {
+  text-align: center;
 
-    text-align: center;
+  font-size: 28px;
 
-    font-size: 28px;
+  color: #ff69b4;
 
-    color: #ff69b4;
+  margin-bottom: 18px;
 
-    margin-bottom: 18px;
-
-    text-shadow:
-        1px 1px 0 white;
+  text-shadow: 1px 1px 0 white;
 }
 
 .ranking-table {
+  width: 100%;
 
-    width: 100%;
+  border-collapse: collapse;
 
-    border-collapse: collapse;
+  overflow: hidden;
 
-    overflow: hidden;
+  border-radius: 18px;
 
-    border-radius: 18px;
+  background: white;
 
-    background: white;
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .ranking-table th {
+  background: #ffd966;
 
-    background:#ffd966;
-    color: white;
+  color: white;
 
-    font-size: 16px;
+  font-size: 16px;
 
-    padding: 10px 12px;
+  padding: 10px 12px;
 
-    border: none;
+  border: none;
 }
 
 .ranking-table td {
+  background: #fffdf7;
 
-    background: #fffdf7;
+  padding: 8px 10px;
 
-    padding: 8px 10px;
+  font-size: 15px;
 
-    font-size: 15px;
+  text-align: center;
 
-    height: auto;
+  border-bottom: 1px solid #ffe8f2;
 
-    text-align: center;
-
-    border-bottom:
-        1px solid #ffe8f2;
-
-    color: #666;
+  color: #666;
 }
 
 .ranking-table tr:last-child td {
-
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .ranking-table tr:hover td {
-
-    background: #fff0f7;
+  background: #fff0f7;
 }
 
 /* =========================
    クリア
 ========================= */
+
 .clear-text {
+  text-align: center;
 
-    text-align: center;
+  font-size: 46px;
 
-    font-size: 46px;
+  color: #ff69b4;
 
-    color: #ff69b4;
-
-    animation:
-        pop 1s infinite alternate;
+  animation: pop 1s infinite alternate;
 }
 
 @keyframes pop {
-
-    from {
-
-        transform: scale(1);
-    }
-
-    to {
-
-        transform: scale(1.08);
-    }
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
 }
 
 /* =========================
-   下部
+   スマホ対応
 ========================= */
 
-.bottom-area {
-
-    margin-top: 50px;
-
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
     text-align: center;
+  }
 
-    padding-bottom: 20px;
-}
+  .status {
+    justify-content: center;
+  }
 
-/* =========================
-   再挑戦ボタン
-========================= */
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.retry-area {
-
-    margin-top: 35px;
-
-    text-align: center;
-}
-
-.retry-button {
-
-    padding: 14px 32px;
-
-    font-size: 20px;
-
-    font-weight: bold;
-
-    border: none;
-
-    border-radius: 999px;
-
-	color: #5a4a66;
-	background: #e9ddff;
-
-	cursor: pointer;
-
-	 transition: 0.25s;
-
-	 box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-}
-
-.retry-button:hover {
-
-    transform:
-        translateY(-3px)
-        scale(1.05);
-	background: #dfd0ff;
-
-    box-shadow:
-        0 10px 18px rgba(0,0,0,0.18);
-
+  .rank {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 20px;
+  }
 }
