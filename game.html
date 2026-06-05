@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>神経衰弱</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<h2>
+プレイヤー：
+<span id="playerName">---</span>
+</h2>
+
+<h2>
+ターン：
+<span id="turn">0</span>
+</h2>
+
+<h1 id="clearText"
+    class="clear-text"
+    style="display:none;">
+    🎉 CLEAR !! 🎉
+</h1>
+
+<div class="wrapper">
+
+    <!-- ゲーム -->
+    <div class="game">
+
+        <table id="gameTable">
+        </table>
+
+    </div>
+
+    <!-- ランキング -->
+    <div class="rank">
+
+        <h3>TOP10</h3>
+
+        <table class="ranking-table">
+
+            <tr>
+                <th>順位</th>
+                <th>名前</th>
+                <th>ターン</th>
+            </tr>
+
+            <tbody id="rankingBody">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="retry-area">
+
+    <button
+        class="retry-button"
+        onclick="restartGame()">
+
+        🔄 もう一回あそぶ！
+
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

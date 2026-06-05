@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>神経衰弱 START</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="start-box">
+
+    <h1>🃏 神経衰弱 🃏</h1>
+
+    <h2>プレイヤー名</h2>
+
+    <input type="text" id="playerInput" required>
+
+    <br><br>
+
+    <button class="start-button" onclick="startGame()">
+        🎮 ゲーム開始
+    </button>
+
+</div>
+
+<script>
+
+function startGame() {
+
+    const name =
+        document.getElementById("playerInput").value.trim();
+
+    if (!name) {
+        alert("名前を入力してください");
+        return;
+    }
+
+    // 保存
+    localStorage.setItem("playerName", name);
+
+    // gameへ移動
+    location.href = "game.html";
+}
+
+// =========================
+// プレイヤー名自動入力
+// =========================
+window.onload = () => {
+
+    const saved =
+        localStorage.getItem("playerName");
+
+    if (saved) {
+
+        document.getElementById(
+            "playerInput"
+        ).value = saved;
+    }
+};
+
+</script>
+
+</body>
+</html>
